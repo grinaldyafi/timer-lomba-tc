@@ -1,0 +1,35 @@
+body{
+   /* fallback for old browsers */
+   background: linear-gradient(to right top, rgb(13, 33, 60), rgb(52, 3, 62, 0.8));
+   overflow: hidden;
+}
+
+#time-holder {
+  font-family: 'Roboto Mono', monospace;
+  font-size: 11vw;
+  color: rgb(247, 247, 247);
+  padding-top: 30vh;
+  transition: 0.5s;
+}
+
+#time-holder:hover{
+  color: rgb(255, 255, 255);
+  font-size: 12vw;
+}
+
+.button-controller {
+   padding-top: 60px;
+  font-size: 2vw;
+  color: rgb(235, 187, 235);
+  transition: 0.3s;
+}
+
+.button-controller:hover {
+  color: rgb(255, 255, 255);
+  font-size: 4vw;
+  cursor: pointer;
+}
+ .button-controller p {
+   border: 2px solid white;
+   margin-top: 40px;
+ }
