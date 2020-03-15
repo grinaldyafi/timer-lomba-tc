@@ -296,7 +296,7 @@ $(document).ready(function () {
 
 
     })
-    $('#2-menit-button').click(function(){
+    $('#3-menit-button').click(function(){
         $('#play-div').show();
         $('#pause-div').hide();
 
@@ -482,6 +482,40 @@ $(document).ready(function () {
 
 
     })
+
+    $('#2-menit-button').click(function(){
+        $('#play-div').show();
+        $('#pause-div').hide();
+
+        let newTime = '';
+
+        clearInterval(timeNow);
+
+        let newHours = 0;
+        let newMinutes = 2;
+        let newSeconds = 0;
+
+        if(newHours < 10){
+            newTime = newTime + "0";
+        }
+        newTime = newTime + newHours + ":";
+        if(newMinutes < 10){
+            newTime = newTime + "0";
+        }
+        newTime = newTime + newMinutes + ":";
+        if(newSeconds < 10){
+            newTime = newTime + "0";
+        }
+        newTime = newTime + newSeconds;
+
+        $('#time-holder').text(newTime);
+
+        time = ((newHours * 3600) + (newMinutes * 60) + newSeconds) * 1000;
+
+
+    })
+
+    
 });
 
 
