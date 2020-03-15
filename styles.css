@@ -6,7 +6,7 @@ body{
 
 #time-holder {
   font-family: 'Roboto Mono', monospace;
-  font-size: 11vw;
+  font-size: 9vw;
   color: rgb(247, 247, 247);
   padding-top: 30vh;
   transition: 0.5s;

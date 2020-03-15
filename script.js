@@ -56,7 +56,8 @@ $(document).ready(function () {
 
                     time = 180000;
                     
-                    $('#time-holder').text('Time is Up!');
+                  
+                    $('#time-holder').text('Waktu Habis!');
                     
                 }
 
@@ -304,7 +305,7 @@ $(document).ready(function () {
         clearInterval(timeNow);
 
         let newHours = 0;
-        let newMinutes = 2;
+        let newMinutes = 3;
         let newSeconds = 0;
 
         if(newHours < 10){
