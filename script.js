@@ -16,7 +16,7 @@ $(document).ready(function () {
 
 
             time = 180000;
-            $('#time-holder').text('00:03:00');
+            $('#time-holder').text('00:00:00');
         } else {
 
             timeNow = setInterval(() => {
@@ -55,8 +55,9 @@ $(document).ready(function () {
 
 
                     time = 180000;
-                    alert("WAKTU HABIS LUR!");
-                    $('#time-holder').text('00:00:00');
+                    
+                    $('#time-holder').text('Time is Up!');
+                    
                 }
 
             }, 1000);
